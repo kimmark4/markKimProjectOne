@@ -1,0 +1,9 @@
+body {
+  background: #B3EB95;
+}
+
+p.tagline {
+  border: 1px solid #B3EB95;
+  color: #CCC;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
