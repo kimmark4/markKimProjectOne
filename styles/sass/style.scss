@@ -1,13 +1,9 @@
-$primary: #B3EB95;
-$secondary: #CCC;
-$baseFont: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$darkSlateBlue: #1c315c;
+$TurquoiseBlue: #0cadc0;
+$LightSkyBlue: #ccedfb;
+$blackTwo: #161515;
+$baseFont: "Pacifico", cursive;
+$secondaryFont: "Lato", sans-serif;
 
-body {
-  background: $primary;
-}
 
-p.tagline {
-  border: 1px solid $primary;
-  color: $secondary;
-  font-family: $baseFont;
-}
+@import "partials/generalStyles";
