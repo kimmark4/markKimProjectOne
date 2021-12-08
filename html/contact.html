@@ -12,11 +12,10 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/4ac0aabc02.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/contact.css">
 </head>
 
 <body>
-    <header>
+    <header class="contactHeader">
         <div class="wrapper">
             <div class="navBar">
                 <div class="logo">
@@ -25,32 +24,32 @@
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./html/blog.html">Blog</a></li>
+                    <li><a href="./html/contact.html" class="currentPage">Contact</a></li>
                 </ul>
             </div>
             <h2>Get in touch</h2>
         </div>
     </header>
     <main>
-        <div class="wrapper">
-            <form action="submit" class="wrapper">
-                <input type="text" name="name" placeholder="Name" id="name">
-                <input type="email" name="email" placeholder="Email Address" id="email">
-                <textarea name="comment" placeholder="Message" id="comment" cols="30" rows="10"></textarea>
-                <button type="submit">submit</button>
-            </form>
-            <aside>
-                <ul>
-                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
-                </ul>
-                <p>info@gmail.com</p>
-                <p>123 - 456 - 7890 <br>123 Queen Street West, <br>Unit 10 <br> Toronto, Ontario <br> M5V2D5</p>
-            </aside>
-        </div>
+        <section class="wrapper contactFlex">
+                <form action="submit" class="contactForm">
+                    <input type="text" name="name" placeholder="Name" id="name">
+                    <input type="email" name="email" placeholder="Email Address" id="email">
+                    <textarea name="comment" placeholder="Message" id="comment" cols="30" rows="10"></textarea>
+                    <button type="submit">submit</button>
+                </form>
+                <aside class="contactSidebar">
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                    </ul>
+                    <p>info@gmail.com</p>
+                    <p>123 - 456 - 7890 <br>123 Queen Street West, <br>Unit 10 <br> Toronto, Ontario <br> M5V2D5</p>
+                </aside>
+        </section>
     </main>
     <footer>
         <p>Copyright © 2019 Juno College</p>

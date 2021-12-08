@@ -1,0 +1,182 @@
+.homeHeader {
+    height: 90vh;
+    background-image: url(../project-1-textilee/textilee-assets/header-home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    h1 {
+        margin-top: 75px;
+        color: $darkSlateBlue;
+        font-size: 2.9rem;
+        line-height: 3.4rem;
+        font-weight: normal;
+    }
+    img {
+        margin-top: 50px;
+        width: 900px;
+    }
+}
+
+@import "./navBar";
+
+.currentPage {
+    border-bottom: solid 3px $turquoiseBlue;
+}
+
+.aboutSection {
+    padding-top: 200px;
+    background-color: $lightSkyBlue;
+}
+
+.aboutFlex {
+    display: flex;
+}
+
+.aboutText {
+    margin-right: 50px;
+}
+
+h3 {
+    color: $darkSlateBlue;
+    font-size: 2.15rem;
+    line-height: 2.9rem;
+    letter-spacing: 2.5px;
+}
+
+.aboutImgContainer {
+    width: 335px;
+    height: 335px;
+    background: $turquoiseBlue;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.aboutImgContainer img {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+
+.findOutMore {
+    color: white;
+    background-color: $darkSlateBlue;
+    font-weight: normal;
+    font-size: 1.35rem;
+    text-align: center;
+    line-height: 1.2rem;
+    letter-spacing: 1.7px;
+    border: 1px solid $darkSlateBlue;
+    padding: 20px 35px;
+}
+
+.gallery {
+    background-color: rgb(40, 63, 77);
+}
+
+.galleryFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery img {
+    width: 30%;
+}
+
+.info {
+    background-color: $lightSkyBlue;
+}
+
+.infoFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    div {
+        width: 40%;
+        position: relative;
+    }
+    .fas {
+        position: absolute;
+        font-size: 1.5rem;
+        left: -65px;
+        color: white;
+        background-color: $turquoiseBlue;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 12px;
+        padding-left: 2px;
+    }
+}
+
+.discover {
+    background-color: $darkSlateBlue;
+    color: white;
+    h5 {
+        font-size: 2rem;
+        line-height: 2.9rem;
+        letter-spacing: 0.125rem;
+        font-weight: normal;
+    }
+    div {
+        margin-top: 50px;
+    }
+    button {
+        color: $blackTwo;
+        background-color: rgb(197, 212, 244);
+        font-weight: normal;
+        font-size: 1.35rem;
+        text-align: center;
+        line-height: 1.2rem;
+        letter-spacing: 1.7px;
+        border: 1px solid $darkSlateBlue;
+        padding: 15px 30px 17px 30px;
+    }
+}
+
+.discoverFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    div {
+        width: 40%;
+    }
+}
+
+// FIX THIS
+
+.discoverText2 {
+    text-align: right;
+}
+
+.discoverImg1 {
+    position: relative;
+    top: -5px;
+    left: -5px;
+    width: 700px;
+    background-color: $turquoiseBlue;
+}
+
+// FIX ABOVE
+
+.banner {
+    background-image: url(../project-1-textilee/textilee-assets/banner.jpg);
+    height: 50vh;
+}
+
+.search {
+    margin: 0 auto;
+    text-align: center;
+    background-color: $lightSkyBlue;
+}
+
+footer {
+    background-color: black;
+    padding: 10px 0;
+    p {
+        margin: 0;
+        text-align: center;
+        color: white;
+    }
+}

@@ -10,92 +10,106 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4ac0aabc02.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-    <header id="home">
+    <header class="homeHeader" id="home">
         <div class="wrapper">
             <div class="navBar">
-                <div class="logo">
+                <div>
                     <a href="#home">Textilee</a>
                 </div>
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#home" class="currentPage">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="./html/blog.html">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="./html/contact.html">Contact</a></li>
                 </ul>
             </div>
-            <h1>Textiles for all projects in mind</h1>
-            <img src="./project-1-textilee/textilee-assets/home-box-header.png" alt="">
+            <h1>Textiles for all projects <br>in mind</h1>
         </div>
+        <img src="./project-1-textilee/textilee-assets/home-box-header.png" alt="">
     </header>
     <main>
-        <section class="wrapper">
-            <div>
-                <h3>Learn new techniques</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic culpa libero corrupti rerum nesciunt
-                    laborum soluta, exercitationem facere perspiciatis itaque sint tempora accusamus accusantium cumque
-                    eligendi, molestias harum qui. Delectus.</p>
-                <button class="findOutMore">find out more</button>
-            </div>
-            <div>
-                <img src="./project-1-textilee/textilee-assets/small-box.jpg" alt="">
+        <section class="aboutSection">
+            <div class="wrapper aboutFlex">
+                <div class="aboutText">
+                    <h3>Learn new techniques</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic culpa libero corrupti rerum nesciunt
+                        laborum soluta, exercitationem facere perspiciatis itaque sint tempora accusamus accusantium
+                        cumque
+                        eligendi, molestias harum qui. Delectus.</p>
+                    <button class="findOutMore">find out more</button>
+                </div>
+                <div class="aboutImgContainer">
+                    <img src="./project-1-textilee/textilee-assets/small-box.jpg" alt="">
+                </div>
             </div>
         </section>
 
-        <section class="wrapper">
-            <div>
+        <section class="gallery">
+            <div class="wrapper galleryFlex">
                 <img src="./project-1-textilee/textilee-assets/gallery-image-1.jpg" alt="">
                 <img src="./project-1-textilee/textilee-assets/gallery-image-2.jpg" alt="">
                 <img src="./project-1-textilee/textilee-assets/gallery-image-3.jpg" alt="">
             </div>
         </section>
 
-        <section class="wrapper">
-            <div>
-                <h3>Upcoming Events</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur ipsum error dicta totam
-                    dolorem labore quam doloribus ipsa debitis laudantium!</p>
-            </div>
-            <div>
-                <h3>Community</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic inventore veritatis illum ipsa id.
-                    Minima deserunt reprehenderit molestiae error quo?</p>
-            </div>
-            <div>
-                <h3>Blog</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sit sunt itaque hic, inventore
-                    odit adipisci excepturi magnam aut libero!</p>
-            </div>
-            <div>
-                <h3>Get in Touch</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus exercitationem sunt ratione
-                    libero non dolore omnis perferendis reiciendis modi ab!</p>
+        <section class="info">
+            <div class="wrapper infoFlex">
+                <div>
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Upcoming Events</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur ipsum error dicta totam
+                        dolorem labore quam doloribus ipsa debitis laudantium!</p>
+                </div>
+                <div>
+                    <i class="fas fa-users"></i>
+                    <h3>Community</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic inventore veritatis illum ipsa id.
+                        Minima deserunt reprehenderit molestiae error quo?</p>
+                </div>
+                <div>
+                    <i class="fas fa-file"></i>
+                    <h3>Blog</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sit sunt itaque hic, inventore
+                        odit adipisci excepturi magnam aut libero!</p>
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <h3>Get in Touch</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus exercitationem sunt ratione
+                        libero non dolore omnis perferendis reiciendis modi ab!</p>
+                </div>
             </div>
         </section>
 
-        <section class="wrapper">
-            <div>
-                <img src="./project-1-textilee/textilee-assets/left-image.jpg" alt="">
-            </div>
-            <div>
-                <h5>Discover our online market</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsa tempora molestiae inventore velit!
-                    Perspiciatis
-                    optio nesciunt recusandae corporis harum?</p>
-                <button class="readMore">read more</button>
-            </div>
-            <div>
-                <img src="./project-1-textilee/textilee-assets/right-image.jpg" alt="">
-            </div>
-            <div>
-                <h5>New locations</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates incidunt fuga eligendi nostrum
-                    harum, eaque
-                    quaerat aliquam ratione delectus odio.</p>
-                <button class="readMore">read more</button>
+        <section class="discover">
+            <div class="wrapper discoverFlex">
+                <div class="discoverImg1">
+                    <img src="./project-1-textilee/textilee-assets/left-image.jpg" alt="">
+                </div>
+                <div class="discoverText1">
+                    <h5>Discover our online market</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsa tempora molestiae inventore
+                        velit!
+                        Perspiciatis
+                        optio nesciunt recusandae corporis harum?</p>
+                    <button>read more</button>
+                </div>
+                <div class="discoverText2">
+                    <h5>New locations</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates incidunt fuga eligendi
+                        nostrum
+                        harum, eaque
+                        quaerat aliquam ratione delectus odio.</p>
+                    <button>read more</button>
+                </div>
+                <div class="discoverImg2">
+                    <img src="./project-1-textilee/textilee-assets/right-image.jpg" alt="">
+                </div>
             </div>
         </section>
 
@@ -103,8 +117,8 @@
 
         </section>
 
-        <section class="wrapper">
-            <div>
+        <section class="search">
+            <div class="wrapper">
                 <h3>Search by style</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde repellendus, temporibus maxime natus
                     architecto quis, fugit eos tenetur illum, explicabo magni. Nesciunt nihil, at mollitia, cum

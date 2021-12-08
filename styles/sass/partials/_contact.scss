@@ -1,0 +1,52 @@
+.contactHeader {
+    height: 80vh;
+    background-image: url(../project-1-textilee/textilee-assets/contact-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contactFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactForm {
+    color: white;
+    background-color: rgb(40, 63, 77);
+    margin-right: 50px;
+
+    input[type="text"],
+    input[type="email"] {
+        background-color: rgb(40, 63, 77);
+        border-bottom: 3px solid $turquoiseBlue;
+    }
+
+    textarea {
+        background-color: rgb(40, 63, 77);
+        border: 3px solid $turquoiseBlue;
+    }
+
+    button {
+        color: $blackTwo;
+        background-color: rgb(197, 212, 244);
+    }
+}
+
+.contactSidebar {
+    ul {
+        display: flex;
+
+        a {
+            color: $darkSlateBlue;
+            margin-right: 25px;
+
+            &:visited,
+            &:hover,
+            &:focus,
+            &:active {
+                color: $darkSlateBlue;
+            }
+        }
+    }
+}

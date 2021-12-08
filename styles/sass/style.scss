@@ -1,9 +1,12 @@
 $darkSlateBlue: #1c315c;
-$TurquoiseBlue: #0cadc0;
-$LightSkyBlue: #ccedfb;
+$turquoiseBlue: #0cadc0;
+$lightSkyBlue: #ccedfb;
 $blackTwo: #161515;
 $baseFont: "Pacifico", cursive;
 $secondaryFont: "Lato", sans-serif;
 
-
 @import "partials/generalStyles";
+@import "partials/form";
+@import "partials/home";
+@import "partials/blog";
+@import "partials/contact";

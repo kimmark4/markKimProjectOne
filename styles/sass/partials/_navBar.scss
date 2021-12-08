@@ -1,0 +1,40 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+
+    a {
+        font-family: $baseFont;
+        color: black;
+        font-size: 1.5rem;
+        line-height: 1.2rem;
+        letter-spacing: 1.7px;
+        &:visited,
+        &:hover,
+        &:focus,
+        &:active {
+            color: black;
+        }
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+
+        a {
+            font-family: $secondaryFont;
+            color: $darkSlateBlue;
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-weight: bold;
+            line-height: 29px;
+            &:visited,
+            &:hover,
+            &:focus,
+            &:active {
+                color: $darkSlateBlue;
+            }
+        }
+    }
+}

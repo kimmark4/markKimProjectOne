@@ -221,11 +221,12 @@ html {
 
 html {
   font-size: 125%;
-  font-family: #161515;
+  font-family: "Pacifico", cursive;
   line-height: 1.15;
 }
 
 p {
+  font-family: "Lato", sans-serif;
   font-size: 1rem;
   line-height: 1.4rem;
   letter-spacing: 0.1rem;
@@ -256,4 +257,421 @@ ul {
 
 section {
   padding: 100px 0;
+}
+
+form {
+  font-family: "Lato", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+form input[type=text],
+form input[type=email] {
+  width: calc(50% - 20px);
+  border: none;
+  padding: 30px;
+  outline: none;
+}
+form textarea {
+  width: 100%;
+  margin-top: 30px;
+  padding: 30px;
+  resize: none;
+  outline: none;
+}
+form button {
+  margin: 20px auto;
+  width: 100%;
+  font-family: "Pacifico", cursive;
+  font-weight: normal;
+  font-size: 1.35rem;
+  text-align: center;
+  line-height: 1.2rem;
+  letter-spacing: 1.7px;
+  border: none;
+  padding: 20px 0;
+}
+
+.homeHeader {
+  height: 90vh;
+  background-image: url(../project-1-textilee/textilee-assets/header-home.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.homeHeader h1 {
+  margin-top: 75px;
+  color: #1c315c;
+  font-size: 2.9rem;
+  line-height: 3.4rem;
+  font-weight: normal;
+}
+.homeHeader img {
+  margin-top: 50px;
+  width: 900px;
+}
+
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
+}
+.navBar a {
+  font-family: "Pacifico", cursive;
+  color: black;
+  font-size: 1.5rem;
+  line-height: 1.2rem;
+  letter-spacing: 1.7px;
+}
+.navBar a:visited, .navBar a:hover, .navBar a:focus, .navBar a:active {
+  color: black;
+}
+.navBar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+}
+.navBar ul a {
+  font-family: "Lato", sans-serif;
+  color: #1c315c;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 29px;
+}
+.navBar ul a:visited, .navBar ul a:hover, .navBar ul a:focus, .navBar ul a:active {
+  color: #1c315c;
+}
+
+.currentPage {
+  border-bottom: solid 3px #0cadc0;
+}
+
+.aboutSection {
+  padding-top: 200px;
+  background-color: #ccedfb;
+}
+
+.aboutFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutText {
+  margin-right: 50px;
+}
+
+h3 {
+  color: #1c315c;
+  font-size: 2.15rem;
+  line-height: 2.9rem;
+  letter-spacing: 2.5px;
+}
+
+.aboutImgContainer {
+  width: 335px;
+  height: 335px;
+  background: #0cadc0;
+  position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.aboutImgContainer img {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+}
+
+.findOutMore {
+  color: white;
+  background-color: #1c315c;
+  font-weight: normal;
+  font-size: 1.35rem;
+  text-align: center;
+  line-height: 1.2rem;
+  letter-spacing: 1.7px;
+  border: 1px solid #1c315c;
+  padding: 20px 35px;
+}
+
+.gallery {
+  background-color: #283f4d;
+}
+
+.galleryFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gallery img {
+  width: 30%;
+}
+
+.info {
+  background-color: #ccedfb;
+}
+
+.infoFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.infoFlex div {
+  width: 40%;
+  position: relative;
+}
+.infoFlex .fas {
+  position: absolute;
+  font-size: 1.5rem;
+  left: -65px;
+  color: white;
+  background-color: #0cadc0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 12px;
+  padding-left: 2px;
+}
+
+.discover {
+  background-color: #1c315c;
+  color: white;
+}
+.discover h5 {
+  font-size: 2rem;
+  line-height: 2.9rem;
+  letter-spacing: 0.125rem;
+  font-weight: normal;
+}
+.discover div {
+  margin-top: 50px;
+}
+.discover button {
+  color: #161515;
+  background-color: #c5d4f4;
+  font-weight: normal;
+  font-size: 1.35rem;
+  text-align: center;
+  line-height: 1.2rem;
+  letter-spacing: 1.7px;
+  border: 1px solid #1c315c;
+  padding: 15px 30px 17px 30px;
+}
+
+.discoverFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.discoverFlex div {
+  width: 40%;
+}
+
+.discoverText2 {
+  text-align: right;
+}
+
+.discoverImg1 {
+  position: relative;
+  top: -5px;
+  left: -5px;
+  width: 700px;
+  background-color: #0cadc0;
+}
+
+.banner {
+  background-image: url(../project-1-textilee/textilee-assets/banner.jpg);
+  height: 50vh;
+}
+
+.search {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ccedfb;
+}
+
+footer {
+  background-color: black;
+  padding: 10px 0;
+}
+footer p {
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+.blogHeader {
+  height: 80vh;
+  background-image: url(../project-1-textilee/textilee-assets/blog-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h2 {
+  margin-top: 75px;
+  color: #1c315c;
+  font-size: 3.4rem;
+  line-height: 3.2rem;
+  font-weight: normal;
+}
+
+main {
+  background-color: #ccedfb;
+}
+
+.blogPost {
+  background-color: #283f4d;
+}
+.blogPost h5 {
+  color: white;
+  font-size: 2rem;
+  line-height: 2.9rem;
+  letter-spacing: 0.125rem;
+  font-weight: normal;
+}
+.blogPost p {
+  color: white;
+}
+.blogPost p:first-of-type {
+  color: #ccedfb;
+}
+
+.blogSidebar {
+  background-color: #283f4d;
+  margin-left: 400px;
+}
+.blogSidebar h6 {
+  font-size: 1.75rem;
+  color: white;
+  letter-spacing: 0.145rem;
+}
+.blogSidebar p {
+  color: white;
+}
+.blogSidebar ul {
+  color: white;
+  list-style-type: disc;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.1rem;
+  margin: 1.25rem 0;
+}
+
+.comments h4 {
+  color: #161515;
+  font-size: 2rem;
+  letter-spacing: 0.215rem;
+}
+.comments .commentFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0 50px 0;
+}
+.comments .commentFlex img {
+  width: 30%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 20px;
+}
+.comments .commentFlex p:first-child {
+  color: rgb 197, 212, 244;
+}
+
+.blogForm {
+  color: #1c315c;
+}
+.blogForm input[type=text],
+.blogForm input[type=email] {
+  background-color: #ccedfb;
+  border-bottom: 3px solid #0cadc0;
+}
+.blogForm textarea {
+  background-color: #ccedfb;
+  border: 3px solid #0cadc0;
+}
+.blogForm button {
+  color: white;
+  background-color: #1c315c;
+}
+
+.contactHeader {
+  height: 80vh;
+  background-image: url(../project-1-textilee/textilee-assets/contact-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contactFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contactForm {
+  color: white;
+  background-color: #283f4d;
+  margin-right: 50px;
+}
+.contactForm input[type=text],
+.contactForm input[type=email] {
+  background-color: #283f4d;
+  border-bottom: 3px solid #0cadc0;
+}
+.contactForm textarea {
+  background-color: #283f4d;
+  border: 3px solid #0cadc0;
+}
+.contactForm button {
+  color: #161515;
+  background-color: #c5d4f4;
+}
+
+.contactSidebar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contactSidebar ul a {
+  color: #1c315c;
+  margin-right: 25px;
+}
+.contactSidebar ul a:visited, .contactSidebar ul a:hover, .contactSidebar ul a:focus, .contactSidebar ul a:active {
+  color: #1c315c;
 }
