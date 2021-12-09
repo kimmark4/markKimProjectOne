@@ -47,3 +47,19 @@ ul {
 section {
   padding: 100px 0;
 }
+
+@media (max-width: 940px) {
+    .wrapper {
+        max-width: 920px;
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    max-width: 580px;
+    width: 70%;
+    margin: 0 auto;
+  }
+}

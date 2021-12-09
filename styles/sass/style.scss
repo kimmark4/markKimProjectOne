@@ -6,6 +6,7 @@ $baseFont: "Pacifico", cursive;
 $secondaryFont: "Lato", sans-serif;
 
 @import "partials/generalStyles";
+@import "partials/navBar";
 @import "partials/form";
 @import "partials/home";
 @import "partials/blog";

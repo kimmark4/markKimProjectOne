@@ -17,12 +17,6 @@
     }
 }
 
-@import "./navBar";
-
-.currentPage {
-    border-bottom: solid 3px $turquoiseBlue;
-}
-
 .aboutSection {
     padding-top: 200px;
     background-color: $lightSkyBlue;
@@ -44,17 +38,10 @@ h3 {
 }
 
 .aboutImgContainer {
+    flex-shrink: 0;
     width: 335px;
     height: 335px;
-    background: $turquoiseBlue;
-    position: relative;
-    flex-shrink: 0;
-}
-
-.aboutImgContainer img {
-    position: absolute;
-    top: -20px;
-    right: -20px;
+    box-shadow: -20px 20px 1px $turquoiseBlue;
 }
 
 .findOutMore {
@@ -139,26 +126,30 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    div {
-        width: 40%;
-    }
 }
 
-// FIX THIS
+.discoverText1,
+.discoverText2 {
+    width: 40%;
+}
 
 .discoverText2 {
     text-align: right;
 }
 
-.discoverImg1 {
+.discoverImgContainer1 {
+    box-shadow: 20px 20px 0 $turquoiseBlue;
     position: relative;
-    top: -5px;
-    left: -5px;
-    width: 700px;
-    background-color: $turquoiseBlue;
+    top: -240px;
+    left: -180px;
 }
 
-// FIX ABOVE
+.discoverImgContainer2 {
+    box-shadow: -20px 20px 0 $turquoiseBlue;
+    position: relative;
+    bottom: -240px;
+    right: -180px;
+}
 
 .banner {
     background-image: url(../project-1-textilee/textilee-assets/banner.jpg);
@@ -178,5 +169,70 @@ footer {
         margin: 0;
         text-align: center;
         color: white;
+    }
+}
+
+@media (max-width: 940px) {
+    h1 {
+        width: 55%;
+        color: black;
+    }
+
+    .mobileHidden {
+        display: none;
+    }
+
+    .aboutSection {
+        padding-top: 100px;
+    }
+
+    .aboutFlex {
+        flex-direction: column;
+    }
+
+    .aboutText {
+        margin-top: 50px;
+    }
+
+    .aboutImgContainer {
+        order: -1;
+        height: auto;
+        width: 100%;
+        margin: 0 auto; 
+        box-shadow: 20px 20px 1px $turquoiseBlue;
+    }
+
+    .gallery img {
+        width: 45%;
+    }
+
+    .infoFlex {
+        flex-direction: column;
+
+        div {
+            width: 100%;
+            margin-top: 50px;
+        }
+    }
+
+    .discoverFlex {
+        flex-direction: column;
+        div {
+            width: 100%;
+            text-align: center;
+            position: static;
+        }
+    }
+
+    .discoverText2 {
+        order: 1;
+    }
+
+    .discoverImgContainer1 {
+        margin-top: 0;
+    }
+
+    .discoverImgContainer1 {
+        box-shadow: 20px 20px 0 $turquoiseBlue;
     }
 }

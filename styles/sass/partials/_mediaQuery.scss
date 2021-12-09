@@ -1,0 +1,56 @@
+@media (max-width: 940px) {
+    .wrapper {
+        max-width: 920px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        width: 55%;
+        color: black;
+    }
+
+    .mobileHidden {
+        display: none;
+    }
+
+    .aboutSection {
+        padding-top: 100px;
+    }
+
+    .aboutFlex {
+        flex-direction: column;
+    }
+
+    .aboutImgContainer {
+        position: static;
+        height: auto;
+
+        img {
+            position: static;
+            box-shadow: 20px 20px 1px $turquoiseBlue;
+        }
+    }
+
+    .discoverFlex {
+        flex-direction: column;
+
+        div {
+            width: 100%;
+            text-align: center;
+            position: static;
+        }
+    }
+
+    .discoverText2 {
+        order: 1;
+    }
+
+    .discoverImgContainer1 {
+        margin-top: 0;
+    }
+
+    .discoverImgContainer1 {
+        box-shadow: 20px 20px 0 $turquoiseBlue;
+    }
+}

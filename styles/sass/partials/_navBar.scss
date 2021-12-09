@@ -38,3 +38,22 @@
         }
     }
 }
+
+.currentPage {
+    border-bottom: solid 3px $turquoiseBlue;
+}
+
+.fa-bars {
+    display: none;
+}
+
+@media (max-width: 940px) {
+    .navBar ul {
+        display: none;
+    }
+
+    .fa-bars {
+        display: block;
+        font-size: 1.5rem;
+    }
+}

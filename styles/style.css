@@ -259,63 +259,20 @@ section {
   padding: 100px 0;
 }
 
-form {
-  font-family: "Lato", sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media (max-width: 940px) {
+  .wrapper {
+    max-width: 920px;
+    width: 70%;
+    margin: 0 auto;
+  }
 }
-form input[type=text],
-form input[type=email] {
-  width: calc(50% - 20px);
-  border: none;
-  padding: 30px;
-  outline: none;
+@media (max-width: 600px) {
+  .wrapper {
+    max-width: 580px;
+    width: 70%;
+    margin: 0 auto;
+  }
 }
-form textarea {
-  width: 100%;
-  margin-top: 30px;
-  padding: 30px;
-  resize: none;
-  outline: none;
-}
-form button {
-  margin: 20px auto;
-  width: 100%;
-  font-family: "Pacifico", cursive;
-  font-weight: normal;
-  font-size: 1.35rem;
-  text-align: center;
-  line-height: 1.2rem;
-  letter-spacing: 1.7px;
-  border: none;
-  padding: 20px 0;
-}
-
-.homeHeader {
-  height: 90vh;
-  background-image: url(../project-1-textilee/textilee-assets/header-home.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.homeHeader h1 {
-  margin-top: 75px;
-  color: #1c315c;
-  font-size: 2.9rem;
-  line-height: 3.4rem;
-  font-weight: normal;
-}
-.homeHeader img {
-  margin-top: 50px;
-  width: 900px;
-}
-
 .navBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -360,6 +317,87 @@ form button {
   border-bottom: solid 3px #0cadc0;
 }
 
+.fa-bars {
+  display: none;
+}
+
+@media (max-width: 940px) {
+  .navBar ul {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+    font-size: 1.5rem;
+  }
+}
+form {
+  font-family: "Lato", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+form input[type=text],
+form input[type=email] {
+  width: calc(50% - 20px);
+  border: none;
+  padding: 30px;
+  outline: none;
+}
+form textarea {
+  width: 100%;
+  margin-top: 30px;
+  padding: 30px;
+  resize: none;
+  outline: none;
+}
+form button {
+  margin: 20px auto;
+  width: 100%;
+  font-family: "Pacifico", cursive;
+  font-weight: normal;
+  font-size: 1.35rem;
+  text-align: center;
+  line-height: 1.2rem;
+  letter-spacing: 1.7px;
+  border: none;
+  padding: 20px 0;
+}
+
+@media (max-width: 940px) {
+  form input[type=text],
+form input[type=email] {
+    width: 100%;
+  }
+
+  textarea {
+    height: 200px;
+  }
+}
+.homeHeader {
+  height: 90vh;
+  background-image: url(../project-1-textilee/textilee-assets/header-home.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.homeHeader h1 {
+  margin-top: 75px;
+  color: #1c315c;
+  font-size: 2.9rem;
+  line-height: 3.4rem;
+  font-weight: normal;
+}
+.homeHeader img {
+  margin-top: 50px;
+  width: 900px;
+}
+
 .aboutSection {
   padding-top: 200px;
   background-color: #ccedfb;
@@ -383,18 +421,12 @@ h3 {
 }
 
 .aboutImgContainer {
-  width: 335px;
-  height: 335px;
-  background: #0cadc0;
-  position: relative;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-}
-
-.aboutImgContainer img {
-  position: absolute;
-  top: -20px;
-  right: -20px;
+  width: 335px;
+  height: 335px;
+  -webkit-box-shadow: -20px 20px 1px #0cadc0;
+          box-shadow: -20px 20px 1px #0cadc0;
 }
 
 .findOutMore {
@@ -493,7 +525,9 @@ h3 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.discoverFlex div {
+
+.discoverText1,
+.discoverText2 {
   width: 40%;
 }
 
@@ -501,12 +535,20 @@ h3 {
   text-align: right;
 }
 
-.discoverImg1 {
+.discoverImgContainer1 {
+  -webkit-box-shadow: 20px 20px 0 #0cadc0;
+          box-shadow: 20px 20px 0 #0cadc0;
   position: relative;
-  top: -5px;
-  left: -5px;
-  width: 700px;
-  background-color: #0cadc0;
+  top: -240px;
+  left: -180px;
+}
+
+.discoverImgContainer2 {
+  -webkit-box-shadow: -20px 20px 0 #0cadc0;
+          box-shadow: -20px 20px 0 #0cadc0;
+  position: relative;
+  bottom: -240px;
+  right: -180px;
 }
 
 .banner {
@@ -530,6 +572,84 @@ footer p {
   color: white;
 }
 
+@media (max-width: 940px) {
+  h1 {
+    width: 55%;
+    color: black;
+  }
+
+  .mobileHidden {
+    display: none;
+  }
+
+  .aboutSection {
+    padding-top: 100px;
+  }
+
+  .aboutFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .aboutText {
+    margin-top: 50px;
+  }
+
+  .aboutImgContainer {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-box-shadow: 20px 20px 1px #0cadc0;
+            box-shadow: 20px 20px 1px #0cadc0;
+  }
+
+  .gallery img {
+    width: 45%;
+  }
+
+  .infoFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .infoFlex div {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .discoverFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .discoverFlex div {
+    width: 100%;
+    text-align: center;
+    position: static;
+  }
+
+  .discoverText2 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .discoverImgContainer1 {
+    margin-top: 0;
+  }
+
+  .discoverImgContainer1 {
+    -webkit-box-shadow: 20px 20px 0 #0cadc0;
+            box-shadow: 20px 20px 0 #0cadc0;
+  }
+}
 .blogHeader {
   height: 80vh;
   background-image: url(../project-1-textilee/textilee-assets/blog-header.jpg);
@@ -546,12 +666,26 @@ h2 {
   font-weight: normal;
 }
 
-main {
+.blog {
   background-color: #ccedfb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .blogPost {
   background-color: #283f4d;
+  -webkit-box-shadow: 20px 20px 0 #0cadc0;
+          box-shadow: 20px 20px 0 #0cadc0;
+  position: relative;
+  left: 0vw;
+}
+.blogPost img {
+  -webkit-box-shadow: 40px 30px 0 #0cadc0;
+          box-shadow: 40px 30px 0 #0cadc0;
+  position: relative;
+  top: -30px;
+  left: -20px;
 }
 .blogPost h5 {
   color: white;
@@ -559,6 +693,7 @@ main {
   line-height: 2.9rem;
   letter-spacing: 0.125rem;
   font-weight: normal;
+  margin-top: 50px;
 }
 .blogPost p {
   color: white;
@@ -569,7 +704,14 @@ main {
 
 .blogSidebar {
   background-color: #283f4d;
-  margin-left: 400px;
+  margin-left: 100px;
+  padding: 35px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 30%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .blogSidebar h6 {
   font-size: 1.75rem;
@@ -589,6 +731,13 @@ main {
   margin: 1.25rem 0;
 }
 
+.comments {
+  padding: 0;
+  background-color: #ccedfb;
+}
+.comments div {
+  width: 70%;
+}
 .comments h4 {
   color: #161515;
   font-size: 2rem;
@@ -601,13 +750,14 @@ main {
   margin: 30px 0 50px 0;
 }
 .comments .commentFlex img {
-  width: 30%;
+  height: 110px;
+  width: auto;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  margin-right: 20px;
+  margin: 25px 20px 0 0;
 }
-.comments .commentFlex p:first-child {
-  color: rgb 197, 212, 244;
+.comments .commentFlex p:first-of-type {
+  color: #1c315c;
 }
 
 .blogForm {
@@ -627,12 +777,24 @@ main {
   background-color: #1c315c;
 }
 
+@media (max-width: 940px) {
+  .blog {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .contactHeader {
   height: 80vh;
   background-image: url(../project-1-textilee/textilee-assets/contact-header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.contactMain {
+  background-color: #ccedfb;
 }
 
 .contactFlex {
@@ -642,12 +804,19 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 0;
 }
 
 .contactForm {
   color: white;
   background-color: #283f4d;
   margin-right: 50px;
+  -webkit-box-shadow: 20px 20px 0 #0cadc0;
+          box-shadow: 20px 20px 0 #0cadc0;
+  padding: 50px;
+  position: relative;
+  top: -250px;
+  left: -85px;
 }
 .contactForm input[type=text],
 .contactForm input[type=email] {
@@ -674,4 +843,27 @@ main {
 }
 .contactSidebar ul a:visited, .contactSidebar ul a:hover, .contactSidebar ul a:focus, .contactSidebar ul a:active {
   color: #1c315c;
+}
+
+@media (max-width: 940px) {
+  .contactFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .contactForm {
+    position: static;
+  }
+
+  .contactSidebar {
+    margin-top: 100px;
+    text-align: center;
+  }
+  .contactSidebar ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }

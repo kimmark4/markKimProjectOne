@@ -14,14 +14,26 @@ h2 {
     font-weight: normal;
 }
 
-main {
+
+.blog {
     background-color: $lightSkyBlue;
-    // position: relative;
+    display: flex; 
 }
 
 .blogPost {
     background-color: rgb(40, 63, 77);
-    // width: 40%;
+    // width: 70%;
+    box-shadow: 20px 20px 0 $turquoiseBlue;
+    // padding: 0 0 5px 200px;
+    position: relative;
+    left: 0vw;
+
+    img {
+        box-shadow: 40px 30px 0 $turquoiseBlue;
+        position: relative;
+        top: -30px;
+        left: -20px;
+    }
 
     h5 {
         color: white;
@@ -29,6 +41,7 @@ main {
         line-height: 2.9rem;
         letter-spacing: 0.125rem;
         font-weight: normal;
+        margin-top: 50px;
     }
 
     p {
@@ -41,11 +54,14 @@ main {
 }
 
 .blogSidebar {
-    // position: absolute;
-    // top: -100px;
-    // right: 0px;
     background-color: rgb(40, 63, 77);
-    margin-left: 400px;
+    margin-left: 100px;
+    padding: 35px;
+    flex-shrink: 0;
+    width: 30%;
+    height: fit-content;
+
+
     h6 {
         font-size: 1.75rem;
         color: white;
@@ -66,6 +82,11 @@ main {
 }
 
 .comments {
+    padding: 0;
+    background-color: $lightSkyBlue;
+    div {
+        width: 70%;
+    }
     h4 {
         color: $blackTwo;
         font-size: 2rem;
@@ -75,15 +96,15 @@ main {
     .commentFlex {
         display: flex;
         margin: 30px 0 50px 0;
-
         img {
-            width: 30%;
+            height: 110px;
+            width: auto;
             flex-shrink: 0;
-            margin-right: 20px;
+            margin: 25px 20px 0 0;
         }
 
-        p:first-child {
-            color: rgb (197, 212, 244);
+        p:first-of-type {
+            color: $darkSlateBlue;
         }
     }
 }
@@ -105,5 +126,11 @@ main {
     button {
         color: white;
         background-color: $darkSlateBlue;
+    }
+}
+
+@media (max-width: 940px) {
+    .blog {
+        flex-direction: column;
     }
 }

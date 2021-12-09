@@ -6,15 +6,25 @@
     background-position: center;
 }
 
+.contactMain {
+    background-color: $lightSkyBlue;
+}
+
 .contactFlex {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 0;
 }
 
 .contactForm {
     color: white;
     background-color: rgb(40, 63, 77);
     margin-right: 50px;
+    box-shadow: 20px 20px 0 $turquoiseBlue;
+    padding: 50px;
+    position: relative;
+    top: -250px;
+    left: -85px;
 
     input[type="text"],
     input[type="email"] {
@@ -47,6 +57,26 @@
             &:active {
                 color: $darkSlateBlue;
             }
+        }
+    }
+}
+
+
+@media (max-width: 940px) {
+    .contactFlex {
+        flex-direction: column;
+    }
+
+    .contactForm {
+        position: static;
+    }
+
+    .contactSidebar {
+        margin-top: 100px;
+        text-align: center;
+
+        ul {
+            justify-content: center;
         }
     }
 }
