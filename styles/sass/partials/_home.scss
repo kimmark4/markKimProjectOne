@@ -11,6 +11,7 @@
         line-height: 3.4rem;
         font-weight: normal;
     }
+
     img {
         margin-top: 50px;
         width: 900px;
@@ -54,19 +55,26 @@ h3 {
     letter-spacing: 1.7px;
     border: 1px solid $darkSlateBlue;
     padding: 20px 35px;
+
+    &:hover,
+    &:focus {
+        color: $darkSlateBlue;
+        background-color: white;
+        border:  1px solid white;
+    }
 }
 
 .gallery {
     background-color: rgb(40, 63, 77);
+
+    img {
+        width: 30%;
+    }
 }
 
 .galleryFlex {
     display: flex;
     justify-content: space-between;
-}
-
-.gallery img {
-    width: 30%;
 }
 
 .info {
@@ -100,15 +108,14 @@ h3 {
 .discover {
     background-color: $darkSlateBlue;
     color: white;
+
     h5 {
         font-size: 2rem;
         line-height: 2.9rem;
         letter-spacing: 0.125rem;
         font-weight: normal;
     }
-    div {
-        margin-top: 50px;
-    }
+
     button {
         color: $blackTwo;
         background-color: rgb(197, 212, 244);
@@ -117,8 +124,15 @@ h3 {
         text-align: center;
         line-height: 1.2rem;
         letter-spacing: 1.7px;
-        border: 1px solid $darkSlateBlue;
+        border: 1px solid rgb(197, 212, 244);
         padding: 15px 30px 17px 30px;
+
+        &:hover,
+        &:focus {
+            color: rgb(197, 212, 244);
+            background-color: $blackTwo;
+            border: 1px solid $blackTwo;
+        }
     }
 }
 
@@ -140,14 +154,14 @@ h3 {
 .discoverImgContainer1 {
     box-shadow: 20px 20px 0 $turquoiseBlue;
     position: relative;
-    top: -240px;
+    top: -170px;
     left: -180px;
 }
 
 .discoverImgContainer2 {
     box-shadow: -20px 20px 0 $turquoiseBlue;
     position: relative;
-    bottom: -240px;
+    bottom: -170px;
     right: -180px;
 }
 
@@ -199,7 +213,7 @@ footer {
         height: auto;
         width: 100%;
         margin: 0 auto; 
-        box-shadow: 20px 20px 1px $turquoiseBlue;
+        box-shadow: none;
     }
 
     .gallery img {
@@ -213,6 +227,10 @@ footer {
             width: 100%;
             margin-top: 50px;
         }
+    }
+
+    .discover div {
+        margin-top: 50px;
     }
 
     .discoverFlex {
@@ -230,9 +248,10 @@ footer {
 
     .discoverImgContainer1 {
         margin-top: 0;
+        box-shadow: none;
     }
 
-    .discoverImgContainer1 {
-        box-shadow: 20px 20px 0 $turquoiseBlue;
+    .discoverImgContainer2 {
+        box-shadow: none;
     }
 }

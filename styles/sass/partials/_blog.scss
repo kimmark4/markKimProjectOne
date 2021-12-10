@@ -14,24 +14,31 @@ h2 {
     font-weight: normal;
 }
 
-
-.blog {
+.blogMain {
     background-color: $lightSkyBlue;
-    display: flex; 
 }
 
-.blogPost {
+.blogPosts {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+}
+
+.blogWrapper {
+    max-width: 1280px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.post1 {
     background-color: rgb(40, 63, 77);
-    // width: 70%;
-    box-shadow: 20px 20px 0 $turquoiseBlue;
-    // padding: 0 0 5px 200px;
-    position: relative;
-    left: 0vw;
+    width: 60%;
+    box-shadow: 20px 30px 0 $turquoiseBlue;
 
     img {
         box-shadow: 40px 30px 0 $turquoiseBlue;
         position: relative;
-        top: -30px;
+        top: -110px;
         left: -20px;
     }
 
@@ -41,7 +48,6 @@ h2 {
         line-height: 2.9rem;
         letter-spacing: 0.125rem;
         font-weight: normal;
-        margin-top: 50px;
     }
 
     p {
@@ -53,23 +59,30 @@ h2 {
     }
 }
 
-.blogSidebar {
+.post2 {
     background-color: rgb(40, 63, 77);
-    margin-left: 100px;
+    justify-self: flex-end;
+    margin-top: 100px;
     padding: 35px;
-    flex-shrink: 0;
     width: 30%;
     height: fit-content;
 
+    img {
+        position: relative;
+        top: -65px;
+        right: -35px;
+    }
 
     h6 {
         font-size: 1.75rem;
         color: white;
         letter-spacing: 0.145rem;
     }
+
     p {
         color: white;
     }
+
     ul {
         color: white;
         list-style-type: disc;
@@ -84,9 +97,11 @@ h2 {
 .comments {
     padding: 0;
     background-color: $lightSkyBlue;
+
     div {
-        width: 70%;
+        width: 75%;
     }
+
     h4 {
         color: $blackTwo;
         font-size: 2rem;
@@ -95,7 +110,8 @@ h2 {
 
     .commentFlex {
         display: flex;
-        margin: 30px 0 50px 0;
+        margin-top: 50px;
+
         img {
             height: 110px;
             width: auto;
@@ -111,6 +127,7 @@ h2 {
 
 .blogForm {
     color: $darkSlateBlue;
+    background-color: $lightSkyBlue;
 
     input[type="text"],
     input[type="email"] {
@@ -126,11 +143,64 @@ h2 {
     button {
         color: white;
         background-color: $darkSlateBlue;
+
+        &:hover,
+        &:focus {
+            color: $darkSlateBlue;
+            background-color: white;
+        }
     }
 }
 
 @media (max-width: 940px) {
-    .blog {
+    .blogPosts {
         flex-direction: column;
+    }
+
+    .blogWrapper {
+        width: 100%;
+    }
+
+    .mobileWrapper {
+        max-width: 920px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .blogPosts {
+        padding-top: 35px;
+    }
+
+    .post1,
+    .post2 {
+        width: 100%;
+        box-shadow: 10px 15px 0 $turquoiseBlue;
+
+        img {
+            position: static;
+            box-shadow: none;
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+
+    .post1 {
+        padding: 35px;
+
+        h5 {
+            margin-top: 30px;
+        }
+    }
+
+    .post2 {
+        h6 {
+            margin-top: 30px;
+        }
+    }
+
+    .comments {
+        div {
+            width: 70%;
+        }
     }
 }

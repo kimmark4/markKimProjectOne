@@ -21,57 +21,37 @@
                 <div>
                     <a href="../index.html">Textilee</a>
                 </div>
+                <label for="toggle"><i class="fa fa-bars"></i></label>
+                <input type="checkbox" id="toggle" name="toggle" />
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="./blog.html" class="currentPage">Blog</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
-                <i class="fas fa-bars"></i>
             </div>
             <h2>Blog</h2>
         </div>
     </header>
-    <main>
-        <section class="blog">
-            <div class="wrapper">
-                <div class="blogPost">
-                    <div class="blogImgContainer">
-                        <img src="../project-1-textilee/textilee-assets/blog-post-image.jpg" alt="">
-                    </div>
-                    <div class="blogTextContainer">
-                        <h5>Our new collection</h5>
-                        <p>Monday, October 5th, 2019 by Saron</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quia porro labore. Perspiciatis
-                            nemo
-                            adipisci accusantium dolorem. Provident, iusto possimus sunt aperiam non accusantium labore
-                            deleniti
-                            iure expedita aliquam! Est.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem in exercitationem saepe natus
-                            maxime
-                            ad,
-                            nemo ducimus blanditiis minus quis, vitae excepturi laudantium, eligendi quia numquam vero
-                            cupiditate
-                            explicabo. Tempora.</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque officia ipsum ullam dolorum
-                            animi.
-                            Accusantium, labore deserunt! Eligendi tempora odio ut vel eius, ipsum ipsam numquam
-                            deleniti
-                            adipisci
-                            quaerat vitae accusamus fugit consectetur et velit amet odit unde consequatur eveniet
-                            delectus,
-                            in
-                            ipsa
-                            beatae? Voluptate perspiciatis dolor debitis adipisci maiores.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique quae enim corporis optio
-                            natus.
-                            Enim
-                            esse minus eos repudiandae unde?</p>
-                    </div>
+    <main class="blogMain">
+        <section class="blogPosts mobileWrapper">
+            <div class="post1">
+                <div class="blogImgContainer">
+                    <img src="../project-1-textilee/textilee-assets/blog-post-image.jpg" alt="">
+                </div>
+                <div class="blogWrapper">
+                    <h5>Our new collection</h5>
+                    <p>Monday, October 5th, 2019 by Saron</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eaque ad ullam quam facere impedit aut eos neque doloribus. Ab at soluta rerum quod, cupiditate similique distinctio. Suscipit dolores impedit vero, amet officiis placeat. Earum laboriosam, quae odit ipsum, voluptatem vel rem dolorum illum modi tenetur corrupti maxime nostrum officiis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus explicabo placeat iusto ea ipsum quis, sapiente nihil odit repellendus vitae commodi necessitatibus amet repellat autem voluptate eligendi eveniet animi eum eos ad facilis quae vero non beatae. Dicta officia doloribus aut assumenda quod repellendus, exercitationem quae consequatur voluptatem iste amet?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, maxime beatae recusandae assumenda ut suscipit distinctio nostrum, quidem aliquam laudantium exercitationem? Impedit veritatis quos obcaecati, sunt voluptatem delectus aliquid dignissimos quod soluta quasi, necessitatibus ad molestiae est et doloremque quo ut aperiam. Odio excepturi voluptate ad ratione sit! Aliquid, corporis?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, alias numquam! Aperiam temporibus eius consectetur vero pariatur perferendis labore sit distinctio magnam placeat, blanditiis qui eveniet aliquam quod repellat voluptates esse ipsam libero et numquam fugiat deleniti modi dolorum accusantium? Quod quibusdam suscipit laudantium distinctio, quisquam vero fugiat totam dolore!</p>
                 </div>
             </div>
-            <aside class="blogSidebar">
-                <img src="../project-1-textilee/textilee-assets/sidebar-image.jpg" alt="">
+            <aside class="post2">
+                <div class="sidebarImgContainer">
+                    <img src="../project-1-textilee/textilee-assets/sidebar-image.jpg" alt="many rolls of beige fabrics clumped up beside each other viewed at from above">
+                </div>
                 <div>
                     <h6>Our Mission</h6>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, neque. Find out more.</p>
@@ -109,8 +89,8 @@
                 </div>
             </div>
         </section>
-        <section>
-            <form action="submit" class="wrapper blogForm">
+        <section class="blogForm">
+            <form action="submit" class="wrapper">
                 <input type="text" name="name" placeholder="Name" id="name">
                 <input type="email" name="email" placeholder="Email Address" id="email">
                 <textarea name="comment" placeholder="Comment" id="comment" cols="30" rows="10"></textarea>

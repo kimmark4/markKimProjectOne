@@ -9,9 +9,8 @@
         font-size: 1.5rem;
         line-height: 1.2rem;
         letter-spacing: 1.7px;
+
         &:visited,
-        &:hover,
-        &:focus,
         &:active {
             color: black;
         }
@@ -29,13 +28,26 @@
             font-size: 1rem;
             font-weight: bold;
             line-height: 29px;
+            padding: 10px 10px 5px 10px;
+
             &:visited,
             &:hover,
             &:focus,
             &:active {
                 color: $darkSlateBlue;
             }
+
+            &:hover,
+            &:focus {
+                background-color: $turquoiseBlue;
+                border-bottom: solid 3px $turquoiseBlue;
+            }
         }
+    }
+
+    label,
+    input[type="checkbox"] {
+        display: none;
     }
 }
 
@@ -43,17 +55,41 @@
     border-bottom: solid 3px $turquoiseBlue;
 }
 
-.fa-bars {
-    display: none;
-}
-
 @media (max-width: 940px) {
     .navBar ul {
-        display: none;
+        background: $lightSkyBlue;
+        position: absolute;
+        z-index: 100;
+        width: 33%;
+        top: 0;
+        left: -33%;
+        border-right: 5px solid $darkSlateBlue;
+        border-bottom: 5px solid $darkSlateBlue;
+        flex-direction: column;
+        transition: all 0.4s;
+
+        a {
+            display: block;
+            font-size: 1.5rem;
+            padding: 25px 25px;
+            border: none;
+            transition: all 0.2s;
+
+            &:hover,
+            &:focus {
+                background: $turquoiseBlue;
+                border: none;
+            }
+        }
     }
 
-    .fa-bars {
+    input[type="checkbox"]:checked + ul {
+        left: 0;
+    }
+
+    .navBar label {
         display: block;
-        font-size: 1.5rem;
+        color: $blackTwo;
+        z-index: 10;
     }
 }
